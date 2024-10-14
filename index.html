@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PLAYDATE FUN TIMES</title>
+	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/cards.css">
+</head>
+
+<body>
+
+	<header>
+		<img src="./images/header-playdate-dev.png" alt="anyone can make games">
+	</header>
+
+	<main>
+		<section class="cards">
+			<ul>
+				<li class="sdk">
+					<h3>Playdate SDK</h3>
+
+					<p>
+						Our full development environment, available for Mac, PC, and Linux.
+						Includes Lua and C APIs, as well as a Simulator for
+						local development, with profiling and more.
+					</p>
+				</li>
+
+				<li class="inside">
+					<h3>Inside Playdate</h3>
+
+					<p>
+						Reference documentation for programming Playdate games.
+						Covers both <strong>Lua</strong> and <strong>C</strong> programming.
+					</p>
+				</li>
+
+				<li class="caps">
+					<h3>Caps</h3>
+
+					<p>
+						Bitmap font editor for Playdate fonts—draw your own characters,
+						import desktop fonts, kern and preview them.
+					</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<script>
+		
+		// ---------------------
+		// Úloha 1a
+		// ---------------------
+		
+		function pozdrav() {
+			console.log('Ahoj Vašo');
+		}
+		
+		pozdrav();
+
+		// ---------------------
+		// Úloha 1b
+		// ---------------------
+	
+		function pozdravJmeno(meno,nick) {
+			console.log('Ahoj ' + meno + ' ty ' + nick + ' ! ');
+		}
+		
+		pozdravJmeno('Vašo','hlupak');
+
+		// ---------------------
+		// Úloha 1c
+		// ---------------------
+		
+		function pozdravMeno(meno) {
+			meno = prompt('Zadej jméno');
+			console.log('Ahoj ' + meno );
+		}
+
+		pozdravMeno();
+
+ 		// ---------------------
+		// Úloha 1d
+		// ---------------------
+		
+		function plus(cislo,cislo2) {
+	 		
+			let suma = 0;
+			suma = cislo + cislo2;
+			
+			console.log('Výsledek je ' + suma );
+			
+		}
+
+		plus(10,10);	
+
+		// ---------------------
+		// Úloha 1e
+		// ---------------------
+		
+		function plusprompt(cislo1,cislo2) {
+	
+			let suma = 0;
+			cislo1 = prompt("napis cislo");
+			cislo2 = prompt("napis druhé cislo");
+			suma = Number(cislo1)+ Number(cislo2);
+			
+			console.log('Výsledek součtu je ' + suma );
+
+			}
+			
+		plusprompt();	
+
+		
+		// ---------------------
+		// Úloha 1f
+		// ---------------------
+	
+	
+		function sectiCisla(cislo1, cislo2) {
+				
+				let suma = cislo1 + cislo2;
+				// kontrolní log do konzoly
+				console.log('Výysledek 1f je ' + suma );
+				return suma;
+				
+				}
+
+		sectiCisla(2,2);
+
+
+		// ---------------------
+		// Úloha 1g
+		// ---------------------
+	
+	
+		function discount(cislo, sleva) {
+				
+				let vypocitanaSleva = cislo * (sleva/100);
+				let suma = cislo - vypocitanaSleva;
+				suma = suma.toFixed(2);
+				// kontrolní log do konzoly
+				console.log('Cena výrobku po slevě ' + sleva + ' % je ' + suma );
+				
+				
+				} 
+
+		discount(123.22333,10);
+
+
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>
